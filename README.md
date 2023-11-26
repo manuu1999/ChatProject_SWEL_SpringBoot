@@ -1,6 +1,6 @@
 # Chat Project Software Engineering
 
-To launch the project, simply start the Spring Boot application using the main class. Once running, access the chat application on your local machine via localhost using different browser windows. This setup lets you chat in real-time by opening the chat application in different browser windows on your computer's localhost. The Class Diagram is also available on this github project as a jpg file.
+To launch the project, simply clone the project to your IntelliJ and start the Spring Boot application using the main class. Once running, access the chat application on your local machine via localhost using different browser windows. This setup lets you chat in real-time by opening the chat application in different browser windows on your computer's localhost. The Class Diagram is also available on this github project as a jpg file.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
 
