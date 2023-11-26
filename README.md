@@ -1,10 +1,5 @@
 # Chat Project Software Engineering
 
-We had to create a new project to implement the structure of a springboot project with the spring initializr The old project is on the repository: 
-https://github.com/manuu1999/ChatProjectServer.git (not relevant anymore)
-
-Furthermore, we used WebSocket instead of HTTP Connection. We hope that this is okey :-)
-
 To launch the project, simply start the Spring Boot application using the main class. Once running, access the chat application on your local machine via localhost using different browser windows. This setup lets you chat in real-time by opening the chat application in different browser windows on your computer's localhost. The Class Diagram is also available on this github project as a jpg file.
 
 --------------------------------------------------------------------------------------------------------------------------------------------
