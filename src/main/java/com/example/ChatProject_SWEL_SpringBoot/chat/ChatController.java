@@ -1,6 +1,7 @@
 package com.example.ChatProject_SWEL_SpringBoot.chat;
 
 
+import com.example.ChatProject_SWEL_SpringBoot.model.ChatMessage;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
 import org.springframework.messaging.handler.annotation.SendTo;
@@ -30,7 +31,10 @@ public class ChatController {
             SimpMessageHeaderAccessor headerAccessor
     ) {
         // Add username in web socket session
-        headerAccessor.getSessionAttributes().put("username", chatMessage.getSender());
+        headerAccessor.getSessionAttributes().put("username", chatMessage.getUser());
         return chatMessage;
     }
+
+
+
 }

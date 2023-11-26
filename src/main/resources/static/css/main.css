@@ -1,16 +1,19 @@
 /* This CSS File is a Teamwork from Dejen and Manuel  */
 
+/* Box-sizing for all elements */
 * {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
 
+/* Setting height and overflow properties for HTML and body */
 html,body {
     height: 100%;
     overflow: hidden;
 }
 
+/* Basic styles for body - font, color, background, etc. */
 body {
     margin: 0;
     padding: 0;
@@ -23,16 +26,19 @@ body {
     height: 100%;
 }
 
+/* Clearfix to handle floated elements */
 .clearfix:after {
     display: block;
     content: "";
     clear: both;
 }
 
+/* Hide an element by default */
 .hidden {
     display: none;
 }
 
+/* Styles for form controls */
 .form-control {
     width: 100%;
     min-height: 38px;
@@ -44,24 +50,29 @@ body {
     margin-bottom: 15px;
 }
 
+/* Styles for input elements */
 input {
     padding-left: 10px;
     outline: none;
 }
 
+/* Margin styles for headings */
 h1, h2, h3, h4, h5, h6 {
     margin-top: 20px;
     margin-bottom: 20px;
 }
 
+/* Specific style for h1 header */
 h1 {
     font-size: 1.7em;
 }
 
+/* Link styles */
 a {
     color: #6db33f;
 }
 
+/* Styles for different button types */
 button {
     box-shadow: none;
     border: 1px solid transparent;
@@ -95,6 +106,7 @@ button.accent {
     color: #fff;
 }
 
+/* Styles for the username page and its container */
 #username-page {
     text-align: center;
 }
@@ -123,7 +135,7 @@ button.accent {
     margin-top: 10px;
 }
 
-
+/* Styles for elements within the chat page */
 #chat-page {
     position: relative;
     height: 100%;
@@ -241,7 +253,7 @@ button.accent {
     width: 100%;
 }
 
-
+/* Styles for screens up to 730px width */
 @media screen and (max-width: 730px) {
 
     .chat-container {
@@ -250,7 +262,7 @@ button.accent {
         margin-top: 10px;
     }
 }
-
+/* Styles for screens up to 480px width */
 @media screen and (max-width: 480px) {
     .chat-container {
         height: calc(100% - 30px);
@@ -286,4 +298,63 @@ button.accent {
     .chat-header h2 {
         font-size: 1.1em;
     }
+
+    /* Styles for the registration and login pages */
+    #registration-page, #login-page {
+        text-align: center;
+    }
+
+    .registration-page-container, .login-page-container {
+        background: #fff;
+        box-shadow: 0 1px 11px rgba(0, 0, 0, 0.27);
+        border-radius: 2px;
+        width: 100%;
+        max-width: 500px;
+        display: inline-block;
+        margin-top: 42px;
+        vertical-align: middle;
+        position: relative;
+        padding: 35px 55px 35px;
+        min-height: 250px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        margin-top: -160px;
+    }
+
+    .title {
+        margin-top: 0;
+        margin-bottom: 20px;
+        font-size: 1.7em;
+    }
+
+    .registration-submit, .login-submit {
+        margin-top: 10px;
+    }
+
+    /* Media queries for responsiveness */
+    @media screen and (max-width: 730px) {
+        .registration-page-container, .login-page-container {
+            width: auto;
+            margin-left: 15px;
+            margin-right: 15px;
+            padding: 25px;
+        }
+    }
+
+    @media screen and (max-width: 480px) {
+        .registration-page-container, .login-page-container {
+            width: auto;
+            margin-left: 10px;
+            margin-right: 10px;
+            padding: 15px;
+        }
+
+        .title {
+            font-size: 1.4em;
+        }
+    }
+
 }

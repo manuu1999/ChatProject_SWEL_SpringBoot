@@ -1,7 +1,7 @@
 package com.example.ChatProject_SWEL_SpringBoot.confic;
 
-import com.example.ChatProject_SWEL_SpringBoot.chat.ChatMessage;
-import com.example.ChatProject_SWEL_SpringBoot.chat.MessageType;
+import com.example.ChatProject_SWEL_SpringBoot.model.ChatMessage;
+import com.example.ChatProject_SWEL_SpringBoot.model.MessageType;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.event.EventListener;
@@ -27,7 +27,7 @@ public class WebSocketEventListener {
             log.info("user disconnected: {}", username);
             var chatMessage = ChatMessage.builder()
                     .type(MessageType.LEAVE)
-                    .sender(username)
+                    .user(username)
                     .build();
             // destination where they listen is: "/topic/public"
             messagingTemplate.convertAndSend("/topic/public", chatMessage); // implemented interface / dependency

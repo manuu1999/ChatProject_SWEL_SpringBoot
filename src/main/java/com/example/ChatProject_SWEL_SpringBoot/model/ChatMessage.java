@@ -1,5 +1,6 @@
-package com.example.ChatProject_SWEL_SpringBoot.chat;
+package com.example.ChatProject_SWEL_SpringBoot.model;
 
+import com.example.ChatProject_SWEL_SpringBoot.model.MessageType;
 import lombok.*;
 
 // classic java object class
@@ -14,6 +15,7 @@ public class ChatMessage {
 
     private MessageType type;
     private String content;
-    private String sender;
+    private String user;
+    private String password;
 
 }
