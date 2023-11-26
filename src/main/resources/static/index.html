@@ -1,0 +1,63 @@
+<!-- This HTML File is a Teamwork from Dejen and Manuel  -->
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+  <title>Chat Application for Software Engineering Module</title>
+  <!-- This is the Link to our main.css File in the CSS folder -->
+  <link rel="stylesheet" href="/css/main.css" />
+</head>
+<body>
+<noscript>
+  <h2>Sorry! Your browser doesn't support Javascript</h2>
+</noscript>
+
+<!-- Div class specification for username page-->
+<div id="username-page">
+  <div class="username-page-container">
+    <h1 class="title">Type your username to enter the Chatroom</h1>
+    <form id="usernameForm" name="usernameForm">
+      <div class="form-group">
+        <input type="text" id="name" placeholder="Username" autocomplete="off" class="form-control" />
+      </div>
+      <div class="form-group">
+        <button type="submit" class="accent username-submit">Start Chatting</button>
+      </div>
+    </form>
+  </div>
+</div>
+
+<!-- Div class (Blog) specification for chat page-->
+<div id="chat-page" class="hidden">
+  <div class="chat-container">
+    <div class="chat-header">
+      <h2>WhatsApp 2.0 ;-)</h2>
+    </div>
+    <div class="connecting">
+      Connecting... please have some patience.. thank you! :-)
+    </div>
+    <!-- message Area will be automatically filled by our JavaScript code-->
+    <ul id="messageArea">
+
+    </ul>
+    <form id="messageForm" name="messageForm">
+      <div class="form-group">
+        <!-- this is where we can type the message-->
+        <div class="input-group clearfix">
+          <input type="text" id="message" placeholder="Type a message..." autocomplete="off" class="form-control"/>
+          <!-- Button to send the message-->
+          <button type="submit" class="primary">Send</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+<!-- to use websocket we need to import it here -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sockjs-client/1.1.4/sockjs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+<!-- This is the link to our main.js file in the js folder-->
+<script src="/js/main.js"></script>
+</body>
+</html>
